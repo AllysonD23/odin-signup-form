@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: fit-content;
+}
+
+.side-bar {
+    background-image: url(images/hair-salon-background.jpg);
+    background-size: cover;
+}
+
+
