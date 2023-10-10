@@ -6,16 +6,28 @@
     font-style: normal;
   }
 
+@font-face {
+    font-family: "Retroica";
+    src:
+      url("Retroica.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html,
 body {
     display: flex;
     height: 100vh;
     width: fit-content;
+    margin: 0;
 }
 
 .side-bar {
     background-image: url(images/hair-salon-background.jpg);
     background-size:cover;
     width: 65%;
+    display: flex;
+    flex-direction: column;
 }
 
 .side-bar-shadow {
@@ -26,15 +38,40 @@ body {
     top: 30%;
 }
 
+.side-bar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar-logo {
+    text-align: center;
+}
+
 div.side-bar-logo > img {
     height: 100px;
     width: auto;
 }
 
 .logo-text {
-    font:
-    1.4em/1.5em "norse-bold",
-    cursive,
-    sans-serif;
+    font: "norse-bold", cursive, sans-serif;
+    color: white;
+    font-size: 5rem;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+.main {
+    font: "retroica", cursive, sans-serif;
+    color: black;
+}
+
+button {
+    background-color: #596D48;
 }
 
